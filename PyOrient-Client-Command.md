@@ -27,7 +27,7 @@ Going back to the example of a smart home database, consider the use case of log
 for sensor in pollen_sensors:
 	 client.command(
       "INSERT INTO PollenSensor "
-      "('device_id', 'read_time', 'read') "
+      "(device_id, read_time, read) "
       "VALUES('%s', '%s', %s')"
       % (sensor.get_id()
          time.now(),
